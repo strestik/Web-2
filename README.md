@@ -1,9 +1,9 @@
-# ⚛️ Physics Experiments Explorer
+# Physics Experiments Explorer
 
 > Tato stránka přibližuje experimenty a pokusy ze světa Fyziky jako srozumitelné a logické nástroje vědy, jejich postup utváření a jejich implikace ve obecném kontextu celého oboru. Dozvíte se jednoduchou cestou za pomocí interaktivních pomůcek jak se vytvářeli, prováděli a co dokazovali pokusy od základních vlnek na vodní hladině až po jemně neintuitivní kvantové jevy.
 
 ---
-## 🧪 Experimenty
+## Experimenty
 <!-- Q = Quantum   R = Relativity   P = Particle   B = Beginner
 
 Pound-Rebha (1959): Demonstrated gravitational redshift
@@ -11,18 +11,18 @@ Pound-Rebha (1959): Demonstrated gravitational redshift
 At home : ver. of Young https://www.instructables.com/How-To-Make-a-Simple-Double-Slit/ -->
 
 ```
-  ╭──────────────────┬─────────────────────────────────────┬──────────────────────────┬─────────────────────────────────╮
-  │ Field            │ Standard                            │ For Beginners            │ At Home                         │
-  ├──────────────────┼─────────────────────────────────────┼──────────────────────────┼─────────────────────────────────┤
-  │    Quantum       │ Bell test, Young's interference     │ Water wave interference  │ Young (DIY)                     │
-  ├──────────────────┼─────────────────────────────────────┼──────────────────────────┼─────────────────────────────────┤
-  │    Relativita    │ LIGO                                │ Eddington                │                                 │
-  ├──────────────────┼─────────────────────────────────────┼──────────────────────────┼─────────────────────────────────┤
-  │    Částice       │ IceCube, Muon g-2, DUNE             │                          │ Wilson cloud chamber            │
-  ╰──────────────────┴─────────────────────────────────────┴──────────────────────────┴─────────────────────────────────╯
+  ╭──────────────────┬─────────────────────────────────┬──────────────────────────┬────────────────────────────╮
+  │ Field            │ Standard                        │ For Beginners            │ At Home                    │
+  ├──────────────────┼─────────────────────────────────┼──────────────────────────┼────────────────────────────┤
+  │    Quantum       │ Bell test, Young's interference │ Water wave interference  │ Young (DIY)                │
+  ├──────────────────┼─────────────────────────────────┼──────────────────────────┼────────────────────────────┤
+  │    Relativita    │ LIGO                            │ Eddington                │                            │
+  ├──────────────────┼─────────────────────────────────┼──────────────────────────┼────────────────────────────┤
+  │    Částice       │ IceCube, Muon g-2, DUNE         │                          │ Wilson cloud chamber       │
+  ╰──────────────────┴─────────────────────────────────┴──────────────────────────┴────────────────────────────╯
 ```
 <!-- ┬ ┴ ┼ ─ │ ├ ┤ -->
-## 🗺️ Mapa stránek
+## Mapa stránek
 
 ```
 index.html
@@ -59,23 +59,23 @@ index.html
 
 ---
 
-## 📄 Popis stránek
+## Popis stránek
 
-### 🏠 `index.html` — Domovská stránka
+### `index.html` — Domovská stránka
 Úvodní stránka webu. Obsahuje přivítání, krátký popis projektu a přehled sekcí.
 
 **Použité HTML prvky:** `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`, `<a>`, `<img>`, `<h1>`, `<p>`
 
 ---
 
-### 👤 `about.html` — O nás
+### `about.html` — O nás
 Informace o projektu.
 
 **Použité HTML prvky:** `<article>`, `<h2>`, `<p>`, `<img>`, `<ul>`, `<li>`
 
 ---
 
-### ✉️ `contact.html` — Kontakt
+### `contact.html` — Kontakt
 Kontaktní stránka s formulářem pro dotazy, připomínky a hodnocení.
 
 **Použité HTML prvky:** `<form>`, `<label>`, `<input>`, `<textarea>`, `<select>`, `<option>`, `<button>`
@@ -108,30 +108,30 @@ Kontaktní stránka s formulářem pro dotazy, připomínky a hodnocení.
 
 ---
 
-### 📰 `blog/summary.html` — Blog
-Přehledová stránka blogu s výpisem článků a jejich popisů.
+### `blog/summary.html` — Blog
+Přehledová stránka blogu s výpisem článků a jejich popisů, většího kontextu a novinek. 
 
 | Článek | Popis |
 |--------|-------|
-| Článek 1 | TODO |
-| Článek 2 | TODO |
-| Článek 3 | TODO |
-| Článek 1 | TODO |
-| Článek 2 | TODO |
-| Článek 3 | TODO |
-| Článek 1 | TODO |
-| Článek 2 | TODO |
-| Článek 3 | TODO |
+| Bell test | Účelem tohoto experimentu bytlo ověřit hypotézu Bellovýxh nerovností a konsekventně tím potvrdit nebo vyvrátit možnost skrytých promněných a lokálního realismu. |
+| Young's interference | Známí také jako dvou-štěrbynový experiment, Youngův pokus prokazoval myšlenku vlno-částicové duality a poukazoval na specifické vlastnosti rodící se kvantové mechaniky. |
+| Water wave interference | Toto není žadný specifický vědecký experiment ale jednoduchá ukázka myšlenky superpozice vln na jednoduchém příkladu vodní hladiny. |
+| Young (DIY) | Tenhle pokus není přímá kopie Youngova experimenntu ale spíše jen ilustrativní verze která stále ukazuje důležitou část originálu a to interferenční vzorek za pomocí bežně dostupných prostředků. |
+| LIGO | Zkratka pro "Laser Interferometer Gravitational-Wave Observatory" je zařízení které používá 4km od sebe vzdálená zrdcadla a laser vyslaný mezi nimi pro zjištění gravitačních vln které by mohly interagovat se světlem během jeho přesunu. |
+| Eddington | Experiment Sira Arthura Eddingtona a Sira Franka Dysona proveden při zatmění slunce 1919 prokázal Einsteinovu teorii relativity díky potvrzení existence gravitačního čočkování slunce. |
+| IceCube | Tento projekt nacházející se na jižním pólu pod povrchem se skládá z tisíce senzorů rozprosetřených v prostou kubického kilometru s jediným účelem a to pozorovat interakce vysokoenergetických neutrín. |
+| Muon g-2 | Tento experiment s účelem ověřit přesnot standartního modelu je zameřen na pozorování chování muonů v silném magnetickém poli s možnostní odhalení zatím neobjevených částic. |
+| DUNE | Plným názvem Deep Underground Neutrino Experiment se zaměřuje na zkounání neutrín jež jsou poslány přes obal Země 1300km k detektoru čímž vedci zkoumají možnost vzniku převahy hmoty nad antihmotou.  |
 
 **Použité HTML prvky:** `<table>`, `<tr>`, `<th>`, `<td>`, `<a>`, `<h2>`, `<p>`
 
 ---
 
-### 🧪 Stránky experimentů — `pages/`
+### Stránky experimentů — `pages/`
 
 Každá stránka experimentu obsahuje: popis pokusu, historický kontext, výsledky a implikace.
 Vybrané stránky obsahují interaktivní simulaci řízenou HTML formulářem a JavaScriptem.
-
+<!-- 
 #### Kvantová fyzika
 
 | Soubor | Experiment | Interaktivní prvky |
@@ -165,7 +165,7 @@ Vybrané stránky obsahují interaktivní simulaci řízenou HTML formulářem a
 
 | Soubor | Experiment | Interaktivní prvky |
 |--------|------------|-------------------|
-| `exp_TODO.html` | TODO | TODO |
+| `exp_TODO.html` | TODO | TODO | -->
 
 ---
 
@@ -197,7 +197,7 @@ Uživatel zadá parametry do formuláře, JavaScript vykreslí simulaci experime
 
 ---
 
-## 🏷️ Přehled použitých HTML tagů
+## Přehled použitých HTML tagů
 
 | Tag | Použití |
 |-----|---------|
