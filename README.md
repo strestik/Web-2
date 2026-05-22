@@ -3,7 +3,25 @@
 > Tato stránka přibližuje experimenty a pokusy ze světa Fyziky jako srozumitelné a logické nástroje vědy, jejich postup utváření a jejich implikace ve obecném kontextu celého oboru. Dozvíte se jednoduchou cestou za pomocí interaktivních pomůcek jak se vytvářeli, prováděli a co dokazovali pokusy od základních vlnek na vodní hladině až po jemně neintuitivní kvantové jevy.
 
 ---
+## 🧪 Experimenty
+<!-- Q = Quantum   R = Relativity   P = Particle   B = Beginner
 
+Pound-Rebha (1959): Demonstrated gravitational redshift
+
+At home : ver. of Young https://www.instructables.com/How-To-Make-a-Simple-Double-Slit/ -->
+
+```
+  ╭──────────────────┬─────────────────────────────────────┬──────────────────────────┬─────────────────────────────────╮
+  │ Field            │ Standard                            │ For Beginners            │ At Home                         │
+  ├──────────────────┼─────────────────────────────────────┼──────────────────────────┼─────────────────────────────────┤
+  │    Quantum       │ Bell test, Young's interference     │ Water wave interference  │ Young (DIY)                     │
+  ├──────────────────┼─────────────────────────────────────┼──────────────────────────┼─────────────────────────────────┤
+  │    Relativita    │ LIGO                                │ Eddington                │                                 │
+  ├──────────────────┼─────────────────────────────────────┼──────────────────────────┼─────────────────────────────────┤
+  │    Částice       │ IceCube, Muon g-2, DUNE             │                          │ Wilson cloud chamber            │
+  ╰──────────────────┴─────────────────────────────────────┴──────────────────────────┴─────────────────────────────────╯
+```
+<!-- ┬ ┴ ┼ ─ │ ├ ┤ -->
 ## 🗺️ Mapa stránek
 
 ```
@@ -12,29 +30,32 @@ index.html
 ├── contact.html
 ├── blog/
 │   └── summary.html
-│       ├── [sekce: Článek 1]
-│       ├── [sekce: Článek 2]
-│       └── ...
 │
 └── pages/
     ├── [Kvantová fyzika]
     │   ├── exp_young.html
-    │   ├── exp_bell.html
-    │   ├── exp_TODO.html
-    │   └── exp_TODO.html
-    ├── [Standardní mechanika]
-    │   ├── exp_TODO.html
-    │   └── exp_TODO.html
-    ├── [Relativistické]
-    │   ├── exp_ligo.html
-    │   └── exp_TODO.html
+    │   ├── exp_DIYyoung.html
+    │   ├── exp_water.html
+    │   └── exp_bell.html
+    │
+    ├── [Částicová fyzika]
+    │   ├── exp_icecube.html
+    │   ├── exp_dune.html
+    |   ├── exp_cloudchamber.html
+    │   └── exp_muon.html
+    │
+    └── [Relativistická fyzika]
+        ├── exp_ligo.html
+        └── exp_eddington.html
+```    
+<!--
     ├── [Pro začátečníky]
     │   ├── exp_TODO.html
     │   └── exp_TODO.html
     └── [Udělej doma]
         ├── exp_TODO.html
-        └── exp_TODO.html
-```
+        └── exp_TODO.html -->
+
 
 ---
 
@@ -48,7 +69,7 @@ index.html
 ---
 
 ### 👤 `about.html` — O nás
-Informace o projektu a jeho autorovi.
+Informace o projektu.
 
 **Použité HTML prvky:** `<article>`, `<h2>`, `<p>`, `<img>`, `<ul>`, `<li>`
 
@@ -92,6 +113,12 @@ Přehledová stránka blogu s výpisem článků a jejich popisů.
 
 | Článek | Popis |
 |--------|-------|
+| Článek 1 | TODO |
+| Článek 2 | TODO |
+| Článek 3 | TODO |
+| Článek 1 | TODO |
+| Článek 2 | TODO |
+| Článek 3 | TODO |
 | Článek 1 | TODO |
 | Článek 2 | TODO |
 | Článek 3 | TODO |
