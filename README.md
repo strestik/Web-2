@@ -11,15 +11,15 @@ Pound-Rebha (1959): Demonstrated gravitational redshift
 At home : ver. of Young https://www.instructables.com/How-To-Make-a-Simple-Double-Slit/ -->
 
 ```
-  ╭──────────────────┬─────────────────────────────────┬──────────────────────────┬────────────────────────────╮
-  │ Field            │ Standard                        │ For Beginners            │ At Home                    │
-  ├──────────────────┼─────────────────────────────────┼──────────────────────────┼────────────────────────────┤
-  │    Quantum       │ Bell test, Young's interference │ Water wave interference  │ Young (DIY)                │
-  ├──────────────────┼─────────────────────────────────┼──────────────────────────┼────────────────────────────┤
-  │    Relativita    │ LIGO                            │ Eddington                │                            │
-  ├──────────────────┼─────────────────────────────────┼──────────────────────────┼────────────────────────────┤
-  │    Částice       │ IceCube, Muon g-2, DUNE         │                          │ Wilson cloud chamber       │
-  ╰──────────────────┴─────────────────────────────────┴──────────────────────────┴────────────────────────────╯
+  ╭───────────────┬─────────────────────────────────┬──────────────────────────┬───────────────────────╮
+  │ Field         │ Standard                        │ For Beginners            │ At Home               │
+  ├───────────────┼─────────────────────────────────┼──────────────────────────┼───────────────────────┤
+  │    Quantum    │ Bell test, Young's interference │ Water wave interference  │ Young (DIY)           │
+  ├───────────────┼─────────────────────────────────┼──────────────────────────┼───────────────────────┤
+  │   Relativita  │ LIGO                            │ Eddington                │                       │
+  ├───────────────┼─────────────────────────────────┼──────────────────────────┼───────────────────────┤
+  │    Částice    │ IceCube, Muon g-2, DUNE         │                          │ Wilson cloud chamber  │
+  ╰───────────────┴─────────────────────────────────┴──────────────────────────┴───────────────────────╯
 ```
 <!-- ┬ ┴ ┼ ─ │ ├ ┤ -->
 ## Mapa stránek
@@ -113,7 +113,7 @@ Přehledová stránka blogu s výpisem článků a jejich popisů, většího ko
 
 | Článek | Popis |
 |--------|-------|
-| Bell test | Účelem tohoto experimentu bytlo ověřit hypotézu Bellovýxh nerovností a konsekventně tím potvrdit nebo vyvrátit možnost skrytých promněných a lokálního realismu. |
+| Bell test | Účelem tohoto experimentu bytlo ověřit hypotézu Bellových nerovností a konsekventně tím potvrdit nebo vyvrátit možnost skrytých promněných a lokálního realismu. |
 | Young's interference | Známí také jako dvou-štěrbynový experiment, Youngův pokus prokazoval myšlenku vlno-částicové duality a poukazoval na specifické vlastnosti rodící se kvantové mechaniky. |
 | Water wave interference | Toto není žadný specifický vědecký experiment ale jednoduchá ukázka myšlenky superpozice vln na jednoduchém příkladu vodní hladiny. |
 | Young (DIY) | Tenhle pokus není přímá kopie Youngova experimenntu ale spíše jen ilustrativní verze která stále ukazuje důležitou část originálu a to interferenční vzorek za pomocí bežně dostupných prostředků. |
