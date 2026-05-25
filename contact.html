@@ -9,15 +9,13 @@
 </head>
 
 <body>
-    <div class="topnav">
+    <div class="navbar">
         <div>
             <div><a style="padding: 2px;" href="index.html"></a></div>
             <a href="index.html">Domů</a>
             <a href="contact.html">Contact</a>
             <a href="about.html">O nás</a>
         </div>
-        
-        
     </div>
 
     <header>
@@ -25,30 +23,58 @@
         <p>
             Vážíme si jakéhokoli feedbacku, dotazů nebo návrhů, 
             které nám pomohou zlepšit tento web a poskytnout vám
-             ještě lepší zážitek. Pokud máte jakékoli připomínky
-             , nápady na vylepšení nebo chcete sdílet své vlastní
-              fyzikální experimenty, neváhejte nás kontaktovat
-               prostřednictvím níže uvedených kontaktních informací.
+            ještě lepší zážitek. Pokud máte jakékoli připomínky, 
+            nápady na vylepšení nebo chcete sdílet své vlastní
+            fyzikální experimenty, neváhejte nás kontaktovat
+            prostřednictvím níže uvedených kontaktních informací.
         </p>
     </header>
 
-    <div>
-        <h2>Tady form</h2>
-        <p>
-            form form form form 
-            form form form form 
-            form form form form 
-            form form form form 
-        </p>
-    </div>
-
-
     <hr style="width: 100%;">
 
-    <div>
-    </div>
+    <h2>Kontaktní informace</h2>
+    <p>
+        Můžete nás kontaktovat rovnou následujícím způsobem:
+    </p>
+    <form method="post" action="form.php">
 
-    <footer>
-    </footer>
+        <label>Jméno:</label>
+        <input type="text" name="jmeno" id="jmeno" placeholder="Vaše jméno" required>
+        <br>
+
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Váš email" required>
+        <br>
+
+        <label>Typy sdělení:</label>
+        <select name="typy" id="typy" required>
+            <option value="" disabled selected>Vyberte možnost</option>
+            <option value="feedback">Feedback</option>
+            <option value="dotaz">Dotaz</option>
+            <option value="vylepseni">Vylepšení</option>
+            <option value="napad_na_experiment">Nápad na experiment</option>
+            <option value="jine">Jiné</option>
+        </select>
+        <br>
+
+        <label>Sdělení:</label>
+        <textarea name="poznamka" id="poznamka" placeholder="Napište sem co jenom chcete....." required></textarea>
+        <br>
+
+        <label>Souhlasím se zpracováním osobních údajů:</label>
+        <input type="checkbox" name="podminky" id="podminky" required>
+        <br>
+
+        <input type="submit" value="Odeslat zprávu">
+
+    </form>
+
+    <hr style="width: 100%;">
 </body>
+
+<footer>
+    <p>&copy; 2026 <b>Physics Experiments Explorer</b>. Všechna práva vyhrazena.</p>
+    <p>Vytvořeno s láskou a vášní pro fyziku a STEM.</p> 
+</footer>
+
 </html>

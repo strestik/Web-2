@@ -1,20 +1,46 @@
-body {
+  body {
     background-color: #3f4241;
     display: flex;
     text-align:left;
-    margin: 0px; 
+    margin: 30px; 
     flex-direction: column;
     font-family: Verdana, Arial, Helvetica, sans-serif, Tahoma, sans-serif;
+    min-height: 100%;
+  }
+
+  body p {
+    color: #e9e7f5;
+    font-size: 18px;
   }
   
   title {
     color: #2FA084;
-    font-size: 35px;
+    font-size: 38px;
   }
-  
+
   header {
     color: #EEEEEE;
-    
+    text-align: center;
+    padding-left: 26px;
+    padding-right: 26px;
+    margin: 8px 0px 0px 0px;
+  
+    border-radius: 30px;
+    background-color: #2a573c;
+  }
+
+  header h1 {
+    color: #EEEEEE;
+    font-size: 34px;
+  }
+
+  header p {
+    color: #EEEEEE;
+    text-align: start;
+  }
+  
+  .wlcome_header {
+    color: #EEEEEE;
     text-align: center;
     padding-left: 35px;
     padding-right: 26px;
@@ -22,12 +48,56 @@ body {
     margin: 12px 26px 0px 26px;
   
     border-radius: 30px;
-    text-shadow: 0px 0px 16px rgb(207 207 207 / 88%);
     background-color: #2a573c;
   }
+
+  .wlcome_header h1 {
+    text-shadow: 0px 0px 16px rgb(44 190 117 / 88%);
+    font-size: 48px;
+  }
+
+  .wlcome_header p {
+    font-size: 20px;
+    padding: 0px 26px 12px 26px;
+    margin: 0px;
+  }
+
+  .navbar {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a573cee;
+    padding: 0px 0px 12px 16px;
+    border-radius: 10px;
+  }
+   .navbar a {
+    text-decoration: none;
+    padding: 0px 10px;
+    font-size: 20px;
+   }
+
+   .topics {
+    font-size: 20px;
+    padding: 2px 0px 0px 28px;
+   }
+
+   .topics li {
+    margin: 4px;
+   }
   
   footer {
     display:flex;
+    background-color: #2a573c;
+    padding: 12px 0px 12px 16px;
+    justify-content: space-between;
+  }
+
+  footer p {
+    font-size: 16px;
+    margin: 4px 56px 0px 56px;
   }
 
   p {
@@ -42,6 +112,23 @@ body {
     color: #EEEEEE;
   }
 
+  h3 {
+    color: #EEEEEE;
+    font-size: 20px;
+  }
+
   a {
     color: #2cbe75;
   }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    color: #e9e7f5;
+  }
+
+  li {
+    color: #e9e7f5;
+  }
+
+  
