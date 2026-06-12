@@ -6,25 +6,46 @@ function getRndInteger(min, max) {
   }
 
 function startSimulation() {
-    let limit = 0.5;
-    
         setInterval(function() {
+            let limit = Math.random(0, 1);
             let pointX = getRndInteger(1, 400);
-            let pointY = getRndInteger(1, 600);        
-            if (intensity(pointX, 1200) > limit)
+            let pointY = getRndInteger(1, 600);
+            // if (Wintensity(pointX, pointY, 400, 600) > limit)
+            // {
+            //     ctx.fillRect(pointX, pointY, 7, 7);
+            // }
+            if (Pintensity(pointX, pointY, 400, 600) > limit)
             {
                 ctx.fillRect(pointX, pointY, 7, 7);
             }
-        }, 100);
+        }, 0.01);
 }
 
-function intensity(y, canvasHeight) {
-    let centered = y - canvasHeight / 2;
-    let k = 0.05;        // stripe spacing
-    let sigma = 150;     // gaussian width
+function Wintensity(x, y, canvasWidth, canvasHeight) {
+    let dx = x - canvasWidth / 2;
+    let dy = y - canvasHeight / 2;
+    let distance = Math.sqrt(dx ** 2 + dy ** 2);
+    let k = 0.03;
+    let sigma = 130;
     
-    let cos2 = Math.cos(k * centered) ** 2;
-    let gaussian = Math.exp(-(centered ** 2) / (2 * sigma ** 2));
+    let cos2 = Math.cos(k * dx) ** 2;        
+    let gaussian = Math.exp(-(distance ** 2) / (2 * sigma ** 2));
     
     return cos2 * gaussian;
+}
+
+function Pintensity(x, y, canvasWidth, canvasHeight) {
+    let sigma = 130;
+
+    let slit0 = 100;
+    let dx = x - slit0;
+    let gaussian0 = Math.exp(-(dx ** 2) / (2 * sigma ** 2));
+
+    let slit1 = 300;
+    let dy = y - slit1;
+    let gaussian1 = Math.exp(-(dy ** 2) / (2 * sigma ** 2));
+    
+    let slits = slit0 + slit1;
+
+    return slits;
 }
