@@ -42,10 +42,16 @@
             Youngův experiment byl klíčovým momentem v historii fyziky a pomohl položit základy pro moderní teorii elektromagnetismu a kvantové mechaniky.
         </p>
         <h2>Simulace Youngova experimentu</h2>
-        <p>
+        <p> 
         </p>
 
-        <button onclick="startSimulation()" width="600" height="200">Spustit</button>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <button class="btn info" onclick="startObservedSimulation()" width="600" height="200">Observed</button>
+        <button class="btn info" onclick="startSimulation()" width="600" height="200">Unobserved</button>
+        <button class="btn info" onclick="stopSimulation()" width="600" height="200">Stop</button>
 
         <hr>
 

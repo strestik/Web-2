@@ -10,15 +10,27 @@ function startSimulation() {
             let limit = Math.random(0, 1);
             let pointX = getRndInteger(1, 400);
             let pointY = getRndInteger(1, 600);
-            // if (Wintensity(pointX, pointY, 400, 600) > limit)
-            // {
-            //     ctx.fillRect(pointX, pointY, 7, 7);
-            // }
+            if (Wintensity(pointX, pointY, 400, 600) > limit)
+            {
+                ctx.fillRect(pointX, pointY, 7, 7);
+            }
+        }, 0.01);
+}
+
+function startObservedSimulation() {
+        setInterval(function() {
+            let limit = Math.random(0, 1);
+            let pointX = getRndInteger(1, 400);
+            let pointY = getRndInteger(1, 600);
             if (Pintensity(pointX, pointY, 400, 600) > limit)
             {
                 ctx.fillRect(pointX, pointY, 7, 7);
             }
         }, 0.01);
+}
+ 
+function stopSimulation() {
+        startObservedSimulation.stopSimulation();
 }
 
 function Wintensity(x, y, canvasWidth, canvasHeight) {
@@ -42,10 +54,10 @@ function Pintensity(x, y, canvasWidth, canvasHeight) {
     let gaussian0 = Math.exp(-(dx ** 2) / (2 * sigma ** 2));
 
     let slit1 = 300;
-    let dy = y - slit1;
+    let dy = x - slit1;
     let gaussian1 = Math.exp(-(dy ** 2) / (2 * sigma ** 2));
     
-    let slits = slit0 + slit1;
+    let slits = gaussian0 + gaussian1;
 
     return slits;
 }
