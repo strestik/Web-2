@@ -6,7 +6,15 @@ function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
 
-
+function runSimulation() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    if (toggle.checked) {
+        startObservedSimulation();
+    }
+    else if (!toggle.checked) {
+        startSimulation();
+    }
+}
   
 let simulationOId;
 let simulationUId;
@@ -56,7 +64,7 @@ function Wintensity(x, y, canvasWidth, canvasHeight) {
 }
 
 function Pintensity(x, y, canvasWidth, canvasHeight) {
-    let sigma = 130;
+    let sigma = 14;
 
     let slit0 = 100;
     let dx = x - slit0;
