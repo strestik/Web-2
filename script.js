@@ -1,11 +1,18 @@
 const canvas = document.getElementById("detector");
 const ctx = canvas.getContext("2d");
+const toggle = document.getElementById("changeState");
 
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
 
+
+  
+let simulationOId;
+let simulationUId;
+
 function startSimulation() {
+    simulationUId =
         setInterval(function() {
             let limit = Math.random(0, 1);
             let pointX = getRndInteger(1, 400);
@@ -18,6 +25,7 @@ function startSimulation() {
 }
 
 function startObservedSimulation() {
+    simulationOId =
         setInterval(function() {
             let limit = Math.random(0, 1);
             let pointX = getRndInteger(1, 400);
@@ -27,10 +35,11 @@ function startObservedSimulation() {
                 ctx.fillRect(pointX, pointY, 7, 7);
             }
         }, 0.01);
-}
+} 
  
 function stopSimulation() {
-        startObservedSimulation.stopSimulation();
+        clearInterval(simulationOId);
+        clearInterval(simulationUId);
 }
 
 function Wintensity(x, y, canvasWidth, canvasHeight) {
@@ -61,3 +70,4 @@ function Pintensity(x, y, canvasWidth, canvasHeight) {
 
     return slits;
 }
+
