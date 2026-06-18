@@ -1,6 +1,6 @@
 # Physics Experiments Explorer
 
-> Tato stránka přibližuje experimenty a pokusy ze světa Fyziky jako srozumitelné a logické nástroje vědy, jejich postup utváření a jejich implikace ve obecném kontextu celého oboru. Dozvíte se jednoduchou cestou za pomocí interaktivních pomůcek jak se vytvářeli, prováděli a co dokazovali pokusy od základních vlnek na vodní hladině až po jemně neintuitivní kvantové jevy.
+> Tato stránka přibližuje experimenty a pokusy ze světa Fyziky jako srozumitelné a logické nástroje vědy, jejich postup utváření a jejich implikace ve obecném kontextu celého oboru. Dozvíte se jednoduchou cestou za pomocí interaktivních pomůcek, jak se vytvářely a prováděly pokusy a co dokazovaly, od základních vlnek na vodní hladině až po jemně neintuitivní kvantové jevy.
 
 ---
 ## Experimenty
@@ -8,7 +8,7 @@
 
 Pound-Rebha (1959): Demonstrated gravitational redshift
 
-At home : ver. of Young https://www.instructables.com/How-To-Make-a-Simple-Double-Slit/ -->
+At home: ver. of Young https://www.instructables.com/How-To-Make-a-Simple-Double-Slit/ -->
 
 ```
   ╭───────────────┬─────────────────────────────────┬──────────────────────────┬───────────────────────╮
@@ -109,19 +109,20 @@ Kontaktní stránka s formulářem pro dotazy, připomínky a hodnocení.
 ---
 
 ### `blog/summary.html` — Blog
-Přehledová stránka blogu s výpisem článků a jejich popisů, většího kontextu a novinek. 
+Přehledová stránka blogu s výpisem článků a jejich popisy, větší kontext a novinky. 
 
 | Článek | Popis |
 |--------|-------|
-| Bell test | Účelem tohoto experimentu bytlo ověřit hypotézu Bellových nerovností a konsekventně tím potvrdit nebo vyvrátit možnost skrytých promněných a lokálního realismu. |
-| Young's interference | Známí také jako dvou-štěrbynový experiment, Youngův pokus prokazoval myšlenku vlno-částicové duality a poukazoval na specifické vlastnosti rodící se kvantové mechaniky. |
-| Water wave interference | Toto není žadný specifický vědecký experiment ale jednoduchá ukázka myšlenky superpozice vln na jednoduchém příkladu vodní hladiny. |
-| Young (DIY) | Tenhle pokus není přímá kopie Youngova experimenntu ale spíše jen ilustrativní verze která stále ukazuje důležitou část originálu a to interferenční vzorek za pomocí bežně dostupných prostředků. |
-| LIGO | Zkratka pro "Laser Interferometer Gravitational-Wave Observatory" je zařízení které používá 4km od sebe vzdálená zrdcadla a laser vyslaný mezi nimi pro zjištění gravitačních vln které by mohly interagovat se světlem během jeho přesunu. |
-| Eddington | Experiment Sira Arthura Eddingtona a Sira Franka Dysona proveden při zatmění slunce 1919 prokázal Einsteinovu teorii relativity díky potvrzení existence gravitačního čočkování slunce. |
-| IceCube | Tento projekt nacházející se na jižním pólu pod povrchem se skládá z tisíce senzorů rozprosetřených v prostou kubického kilometru s jediným účelem a to pozorovat interakce vysokoenergetických neutrín. |
-| Muon g-2 | Tento experiment s účelem ověřit přesnot standartního modelu je zameřen na pozorování chování muonů v silném magnetickém poli s možnostní odhalení zatím neobjevených částic. |
-| DUNE | Plným názvem Deep Underground Neutrino Experiment se zaměřuje na zkounání neutrín jež jsou poslány přes obal Země 1300km k detektoru čímž vedci zkoumají možnost vzniku převahy hmoty nad antihmotou.  |
+| Bell test | Účelem tohoto experimentu bylo ověřit hypotézu Bellových nerovností a konsekventně tím potvrdit nebo vyvrátit možnost skrytých proměnných a lokálního realismu. |
+| Young's interference | Známý také jako dvouštěrbynový experiment, Youngův pokus prokazoval myšlenku vlno-částicové duality a poukazoval na specifické vlastnosti rodící se kvantové mechaniky. |
+| Water wave interference | Toto není žádný specifický vědecký experiment, ale jednoduchá ukázka myšlenky superpozice vln na jednoduchém příkladu vodní hladiny. |
+| Young (DIY) | Tenhle pokus není přímá kopie Youngova experimentu, ale spíše jen ilustrativní verze, která stále ukazuje důležitou část originálu, a to interferenční vzorek za pomocí běžně dostupných prostředků. |
+| LIGO | Je to zkratka pro "Laser Interferometer Gravitational-Wave Observatory", zařízení, které používá 4 km od sebe vzdálená zrcadla a laser vyslaný mezi nimi pro zjištění gravitačních vln, které by mohly interagovat se světlem během jeho přesunu. |
+| Eddington | Experiment sira Arthura Eddingtona a sira Franka Dysona, jež byl proveden při zatmění Slunce 1919 prokázal Einsteinovu teorii relativity díky potvrzení existence gravitačního čočkování Slunce. |
+| IceCube | Tento projekt nacházející se na jižním pólu pod povrchem se skládá z tisíce senzorů rozprostřených v prostoru kubického kilometru s jediným účelem, a to pozorovat interakce vysokoenergetických neutrín. |
+| Muon g-2 | Tento experiment s účelem ověřit přesnost standardního modelu je zaměřen na pozorování chování muonů v silném magnetickém poli s možností odhalení zatím neobjevených částic. |
+| DUNE | Plným názvem Deep Underground Neutrino Experiment se zaměřuje na zkoumání neutrín, jež jsou poslány přes obal Země 1300 km k detektoru, čímž vedci zkoumají možnost vzniku převahy hmoty nad antihmotou.  |
+| Wilsonova mlžná komora | Toto zařízení vynalezl Charles Thomson Rees Wilson a i dnes si jej můžete pořídit a zkoumat zajímavé jevy spojené s jaderným rozpadem. Tento přístroj funguje tak, že je naplněn alkoholem ve formě mlhy a záření vytvářené při rozpadu s ní reagují. |
 
 **Použité HTML prvky:** `<table>`, `<tr>`, `<th>`, `<td>`, `<a>`, `<h2>`, `<p>`
 
