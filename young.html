@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Physics Experiments Explorer</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </head>
 
 <body>
@@ -42,9 +42,28 @@
             Youngův experiment byl klíčovým momentem v historii fyziky a pomohl položit základy pro moderní teorii elektromagnetismu a kvantové mechaniky.
         </p>
         <h2>Simulace Youngova experimentu</h2>
-        <p>
+        <p> 
         </p>
 
+        <label class="switch">
+            <input id = "changeState" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+         
+        <button class="btn info" onclick="runSimulation()" width="600" height="200">Simulace</button>
+        <!-- <button class="btn info" onclick="startObservedSimulation()" width="600" height="200">Observed</button>
+        <button class="btn info" onclick="startSimulation()" width="600" height="200">Unobserved</button> -->
+        <button class="btn info" onclick="stopSimulation()" width="600" height="200">Stop</button>
+
+        
+        <hr>
+
+        
+
+        <canvas id="detector" width="400" height="600"></canvas>
+        
+        <script src="script.js"></script>
+        <hr>
     </div>
 
     <div>
