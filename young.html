@@ -45,17 +45,16 @@
         <p> 
         </p>
 
-        <label class="switch">
-            <input id = "changeState" type="checkbox">
-            <span class="slider round"></span>
-        </label>
-         
-        <button class="btn info" onclick="runSimulation()" width="600" height="200">Simulace</button>
-        <!-- <button class="btn info" onclick="startObservedSimulation()" width="600" height="200">Observed</button>
-        <button class="btn info" onclick="startSimulation()" width="600" height="200">Unobserved</button> -->
-        <button class="btn info" onclick="stopSimulation()" width="600" height="200">Stop</button>
-
-        
+       <div class="sim-controls">
+            <p>Unobserved</p>
+            <label class="switch">
+                <input id="changeState" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <p>Observed</p>
+            <button class="btn info" onclick="runSimulation()">Simulace</button>
+            <button class="btn info" onclick="stopSimulation()">Stop</button>
+        </div>
         <hr>
 
         

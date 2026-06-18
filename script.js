@@ -1,6 +1,7 @@
 const canvas = document.getElementById("detector");
 const ctx = canvas.getContext("2d");
 const toggle = document.getElementById("changeState");
+ctx.fillStyle = "#d11616";
 
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -20,6 +21,7 @@ let simulationOId;
 let simulationUId;
 
 function startSimulation() {
+    clearInterval(simulationUId);
     simulationUId =
         setInterval(function() {
             let limit = Math.random(0, 1);
@@ -33,11 +35,12 @@ function startSimulation() {
 }
 
 function startObservedSimulation() {
+    clearInterval(simulationUId);
     simulationOId =
         setInterval(function() {
             let limit = Math.random(0, 1);
             let pointX = getRndInteger(1, 400);
-            let pointY = getRndInteger(1, 600);
+            let pointY = getRndInteger(150, 450);
             if (Pintensity(pointX, pointY, 400, 600) > limit)
             {
                 ctx.fillRect(pointX, pointY, 7, 7);
@@ -67,12 +70,12 @@ function Pintensity(x, y, canvasWidth, canvasHeight) {
     let sigma = 14;
 
     let slit0 = 100;
-    let dx = x - slit0;
-    let gaussian0 = Math.exp(-(dx ** 2) / (2 * sigma ** 2));
+    let dx0 = x - slit0;
+    let gaussian0 = Math.exp(-(dx0 ** 2) / (2 * sigma ** 2));
 
     let slit1 = 300;
-    let dy = x - slit1;
-    let gaussian1 = Math.exp(-(dy ** 2) / (2 * sigma ** 2));
+    let dx1 = x - slit1;
+    let gaussian1 = Math.exp(-(dx1 ** 2) / (2 * sigma ** 2));
     
     let slits = gaussian0 + gaussian1;
 
