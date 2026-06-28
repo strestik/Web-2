@@ -27,9 +27,9 @@ function startSimulation() {
     simulationUId =
         setInterval(function() {
             let limit = Math.random(0, 1);
-            let pointX = getRndInteger(1, 400);
+            let pointX = getRndInteger(1, 800);
             let pointY = getRndInteger(1, 600);
-            if (Wintensity(pointX, pointY, 400, 600) > limit && roundsLeft > 0)
+            if (Wintensity(pointX, pointY, 800, 600) > limit && roundsLeft > 0)
             {
                 ctx.fillRect(pointX, pointY, 6, 6);
                 roundsLeft--;
@@ -43,9 +43,9 @@ function startObservedSimulation() {
     simulationOId =
         setInterval(function() {
             let limit = Math.random(0, 1);
-            let pointX = getRndInteger(1, 400);
+            let pointX = getRndInteger(1, 800);
             let pointY = getRndInteger(150, 450);
-            if (Pintensity(pointX, pointY, 400, 600) > limit && roundsLeft > 0)
+            if (Pintensity(pointX, pointY, 800, 600) > limit && roundsLeft > 0)
             {
                 ctx.fillRect(pointX, pointY, 6, 6);
                 roundsLeft--;
@@ -74,11 +74,11 @@ function Wintensity(x, y, canvasWidth, canvasHeight) {
 function Pintensity(x, y, canvasWidth, canvasHeight) {
     let sigma = 14;
 
-    let slit0 = 100;
+    let slit0 = 300;
     let dx0 = x - slit0;
     let gaussian0 = Math.exp(-(dx0 ** 2) / (2 * sigma ** 2));
 
-    let slit1 = 300;
+    let slit1 = 500;
     let dx1 = x - slit1;
     let gaussian1 = Math.exp(-(dx1 ** 2) / (2 * sigma ** 2));
     

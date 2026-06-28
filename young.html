@@ -21,7 +21,7 @@
     <header>
         <h1>Youngův interferenční experiment</h1>
         <p>
-            Tento experiment, pojmenovaný po Thomasu Youngovi, je klíčovým důkazem vlnové povahy světla. 
+            Tento experiment, pojmenovaný po Thomasu Youngovi a je klíčovým důkazem vlnové povahy světla. 
             Youngův experiment spočívá v průchodu světla dvěma úzkými štěrbinami, které jsou blízko sebe. 
             Když světlo prochází těmito štěrbinami, dochází k interferenci, což vede k vytvoření vzoru světlých a tmavých pruhů na stínítku za štěrbinami. 
             Tento vzor vzniká díky konstruktivní a destruktivní interferenci vln světla, což potvrzuje, že světlo se chová jako vlna.
@@ -41,9 +41,11 @@
             Jeho výsledky však ukázaly, že světlo vykazuje vlnové chování, což bylo v rozporu s částicovou teorií. 
             Youngův experiment byl klíčovým momentem v historii fyziky a pomohl položit základy pro moderní teorii elektromagnetismu a kvantové mechaniky.
         </p>
-        <h2>Simulace Youngova experimentu</h2>
+        <h2>Simulace Dvouštěrbinového experimentu</h2>
         <p> 
-            Zde si můžete sami vyzkoušet simulaci Youngova interferenčního experimentu. 
+            Zde si můžete sami vyzkoušet simulaci dvouštěrbinového interferenčního experimentu. Je to pozdější verze Youngova experimentu, který byl proveden s elektrony místo světla dokazující i jejich vlnovo-částicovou povahu. 
+        </p>
+        <p>
             Můžete si vybrat jak dlouho bude experiment trvat, avšak čím déle experiment trvá, tím jasnější bude interferenční vzor.
             Také si můžete zvolit, zda chcete experiment pozorovat nebo nepozorovat.
             Jak jste si přečetli v předchozích odstavcích, pozorování experimentu má vliv na výsledky, a proto je možné si vyzkoušet oba scénáře.
@@ -68,8 +70,11 @@
         <hr>
 
         
-
-        <canvas id="detector" width="400" height="600"></canvas>
+        <div style="flex-direction: row;">
+            <canvas id="detector" width="800" height="600"></canvas>
+            <canvas id="slits" width="200" height="600"></canvas>
+            <canvas id="cannon" width="800" height="600"></canvas>
+        </div>
         
         <script src="script.js"></script>
         <hr>
