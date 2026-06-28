@@ -31,7 +31,7 @@ function startSimulation() {
             let pointY = getRndInteger(1, 600);
             if (Wintensity(pointX, pointY, 400, 600) > limit && roundsLeft > 0)
             {
-                ctx.fillRect(pointX, pointY, 7, 7);
+                ctx.fillRect(pointX, pointY, 6, 6);
                 roundsLeft--;
             }
         }, 0.01);
@@ -47,7 +47,7 @@ function startObservedSimulation() {
             let pointY = getRndInteger(150, 450);
             if (Pintensity(pointX, pointY, 400, 600) > limit && roundsLeft > 0)
             {
-                ctx.fillRect(pointX, pointY, 7, 7);
+                ctx.fillRect(pointX, pointY, 6, 6);
                 roundsLeft--;
             }
         }, 0.01);
@@ -62,8 +62,8 @@ function Wintensity(x, y, canvasWidth, canvasHeight) {
     let dx = x - canvasWidth / 2;
     let dy = y - canvasHeight / 2;
     let distance = Math.sqrt(dx ** 2 + dy ** 2);
-    let k = 0.03;
-    let sigma = 140;
+    let k = 0.03; // wave number
+    let sigma = 150; // standard deviation for Gaussian envelope
     
     let cos2 = Math.cos(k * dx) ** 2;        
     let gaussian = Math.exp(-(distance ** 2) / (2 * sigma ** 2));
