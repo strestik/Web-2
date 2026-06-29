@@ -1,15 +1,38 @@
-const canvas = document.getElementById("detector");
-const ctx = canvas.getContext("2d");
+const canvas0 = document.getElementById("detector");
+const canvas1 = document.getElementById("slits");
+const canvas2 = document.getElementById("cannon");
+const ctx = canvas0.getContext("2d");
+const cannonCtx = canvas2.getContext("2d");
+const slitsCtx = canvas1.getContext("2d");
 const toggle = document.getElementById("changeState");
 const time = document.getElementById("Time");
 ctx.fillStyle = "#d11616";
+cannonCtx.fillStyle = "#333";
+slitsCtx.fillStyle = "#555555";
+
+cannonCtx.fillStyle = "#333";
+cannonCtx.fillRect(450, 295, 50, 10);
+
+cannonCtx.beginPath();
+cannonCtx.fillStyle = "#242424";
+cannonCtx.arc(500, 300, 20, 0, Math.PI * 2);
+cannonCtx.fill();
+
+cannonCtx.fillStyle = "#333";
+cannonCtx.fillRect(500, 280, 250, 40);
+
+
+cannonCtx.beginPath();
+cannonCtx.fillStyle = "#202020";
+cannonCtx.arc(750, 300, 20, 0, Math.PI * 2);
+cannonCtx.fill();
 
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
 
 function runSimulation() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, canvas0.width, canvas0.height);
     if (toggle.checked) {
         startObservedSimulation();
     }
