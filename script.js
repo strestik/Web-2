@@ -6,26 +6,9 @@ const cannonCtx = canvas2.getContext("2d");
 const slitsCtx = canvas1.getContext("2d");
 const toggle = document.getElementById("changeState");
 const time = document.getElementById("Time");
-ctx.fillStyle = "#d11616";
-cannonCtx.fillStyle = "#333";
-slitsCtx.fillStyle = "#555555";
+let electrons = [];
+drawCannon();
 
-cannonCtx.fillStyle = "#333";
-cannonCtx.fillRect(450, 295, 50, 10);
-
-cannonCtx.beginPath();
-cannonCtx.fillStyle = "#242424";
-cannonCtx.arc(500, 300, 20, 0, Math.PI * 2);
-cannonCtx.fill();
-
-cannonCtx.fillStyle = "#333";
-cannonCtx.fillRect(500, 280, 250, 40);
-
-
-cannonCtx.beginPath();
-cannonCtx.fillStyle = "#202020";
-cannonCtx.arc(750, 300, 20, 0, Math.PI * 2);
-cannonCtx.fill();
 
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -43,8 +26,11 @@ function runSimulation() {
   
 let simulationOId;
 let simulationUId;
+let animationId;
 
 function startSimulation() {
+    cancelAnimationFrame(animationId);
+    animationId = requestAnimationFrame(animate);
     clearInterval(simulationOId);
     let roundsLeft = Number(time.value) * 100;
     simulationUId =
@@ -61,6 +47,8 @@ function startSimulation() {
 }
 
 function startObservedSimulation() {
+    cancelAnimationFrame(animationId);
+    animationId = requestAnimationFrame(animate);
     clearInterval(simulationUId);
     let roundsLeft = Number(time.value) * 100;
     simulationOId =
@@ -79,6 +67,8 @@ function startObservedSimulation() {
 function stopSimulation() {
         clearInterval(simulationOId);
         clearInterval(simulationUId);
+        cancelAnimationFrame(animationId);
+        stopAnimate();
 }
 
 function Wintensity(x, y, canvasWidth, canvasHeight) {
@@ -110,3 +100,77 @@ function Pintensity(x, y, canvasWidth, canvasHeight) {
     return slits;
 }
 
+function addElectron()
+{
+    let e = {x: 450, y: 297};
+    e.y += Math.random() * 5;
+    e.y -= Math.random() * 5;
+    electrons.push(e);
+}
+
+function moveElectrons() 
+{
+    for (let i = electrons.length - 1; i >= 0; i--) 
+    {
+        electrons[i].x -= 5 + Math.random() * 2 - Math.random() * 2;
+        if (electrons[i].x <= 0)
+        {
+            electrons.splice(i, 1);
+        }
+    }
+}
+
+function drawCannon()
+{
+    ctx.fillStyle = "#d11616";
+    cannonCtx.fillStyle = "#333";
+    slitsCtx.fillStyle = "#555555";
+
+    cannonCtx.fillStyle = "#333";
+    cannonCtx.fillRect(450, 295, 50, 10);
+
+    cannonCtx.beginPath();
+    cannonCtx.fillStyle = "#242424";
+    cannonCtx.arc(500, 300, 20, 0, Math.PI * 2);
+    cannonCtx.fill();
+
+    cannonCtx.fillStyle = "#333";
+    cannonCtx.fillRect(500, 280, 250, 40);
+
+
+    cannonCtx.beginPath();
+    cannonCtx.fillStyle = "#202020";
+    cannonCtx.arc(750, 300, 20, 0, Math.PI * 2);
+    cannonCtx.fill();
+}
+
+function drawSlits()
+{
+}
+
+function drawElectrons(cannonCanvas, cannonCanvas)
+{
+    cannonCtx.clearRect(0, 0, cannonCanvas.width, cannonCanvas.height);
+    drawCannon();
+    for (let i = 0; i < electrons.length; i++)
+    {
+        let r = 20 + Math.random() * 20 - 20;
+        let g = 210 + Math.random() * 20 - 20;
+        let b = 210 + Math.random() * 20 - 20;
+        cannonCtx.fillStyle = `rgb(${r}, ${g}, ${b})`;
+        cannonCtx.fillRect(electrons[i].x, electrons[i].y, 6, 6);
+    }
+}
+
+function animate() {
+    addElectron();
+    moveElectrons();
+    drawElectrons(canvas2, cannonCtx);
+    animationId = requestAnimationFrame(animate);
+}
+
+function stopAnimate() 
+{
+    moveElectrons();
+    drawElectrons(canvas2, cannonCtx);
+}
