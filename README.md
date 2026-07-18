@@ -1,6 +1,6 @@
 # Physics Experiments Explorer
 
-> **Zaujmout, fascinovat a informovat o světě kvantové fyziky.**
+> **Ukázat a předat vědecké experimenty, jasně a stravitelně.**
 ---
 
 > Tato stránka přibližuje experimenty a pokusy ze světa Fyziky jako srozumitelné a logické nástroje vědy, jejich postup utváření a jejich implikace ve obecném kontextu celého oboru. Dozvíte se jednoduchou cestou za pomocí interaktivních pomůcek, jak se vytvářely a prováděly pokusy a co dokazovaly, od základních vlnek na vodní hladině až po jemně neintuitivní kvantové jevy.
