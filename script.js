@@ -32,36 +32,42 @@ function startSimulation() {
     cancelAnimationFrame(animationId);
     animationId = requestAnimationFrame(animate);
     clearInterval(simulationOId);
-    let roundsLeft = Number(time.value) * 100;
-    simulationUId =
-        setInterval(function() {
-            let limit = Math.random(0, 1);
-            let pointX = getRndInteger(1, 800);
-            let pointY = getRndInteger(1, 600);
-            if (Wintensity(pointX, pointY, 800, 600) > limit && roundsLeft > 0)
-            {
-                ctx.fillRect(pointX, pointY, 6, 6);
-                roundsLeft--;
-            }
-        }, 0.01);
+    
+    setTimeout(function() {
+        let roundsLeft = Number(time.value) * 100;
+        simulationUId =
+            setInterval(function() {
+                let limit = Math.random(0, 1);
+                let pointX = getRndInteger(1, 800);
+                let pointY = getRndInteger(1, 600);
+                if (Wintensity(pointX, pointY, 800, 600) > limit && roundsLeft > 0)
+                {
+                    ctx.fillRect(pointX, pointY, 6, 6);
+                    roundsLeft--;
+                }
+            }, 0.01);
+    }, 1600);
 }
 
 function startObservedSimulation() {
     cancelAnimationFrame(animationId);
     animationId = requestAnimationFrame(animate);
     clearInterval(simulationUId);
-    let roundsLeft = Number(time.value) * 100;
-    simulationOId =
-        setInterval(function() {
-            let limit = Math.random(0, 1);
-            let pointX = getRndInteger(1, 800);
-            let pointY = getRndInteger(150, 450);
-            if (Pintensity(pointX, pointY, 800, 600) > limit && roundsLeft > 0)
-            {
-                ctx.fillRect(pointX, pointY, 6, 6);
-                roundsLeft--;
-            }
-        }, 0.01);
+    
+    setTimeout(function() {
+        let roundsLeft = Number(time.value) * 100;
+        simulationOId =
+            setInterval(function() {
+                let limit = Math.random(0, 1);
+                let pointX = getRndInteger(1, 800);
+                let pointY = getRndInteger(150, 450);
+                if (Pintensity(pointX, pointY, 800, 600) > limit && roundsLeft > 0)
+                {
+                    ctx.fillRect(pointX, pointY, 6, 6);
+                    roundsLeft--;
+                }
+            }, 0.01);
+    }, 1600);
 } 
  
 function stopSimulation() {
