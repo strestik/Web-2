@@ -6,6 +6,7 @@ const cannonCtx = canvas2.getContext("2d");
 const slitsCtx = canvas1.getContext("2d");
 const toggle = document.getElementById("changeState");
 const time = document.getElementById("Time");
+const electronsON = true;
 let electrons = [];
 drawCannon();
 
@@ -46,7 +47,7 @@ function startSimulation() {
                     roundsLeft--;
                 }
             }, 0.01);
-    }, 1600);
+    }, 1500);
 }
 
 function startObservedSimulation() {
@@ -67,13 +68,20 @@ function startObservedSimulation() {
                     roundsLeft--;
                 }
             }, 0.01);
-    }, 1600);
+    }, 1500);
 } 
+
+function stopCannon() { // Stops the production of new electrons, but the existing ones will continue to move until they reach the left side of the canvas.
+    if (electronsON) {
+        electronsON = false;
+    }
+}
  
 function stopSimulation() {
         clearInterval(simulationOId);
         clearInterval(simulationUId);
-        cancelAnimationFrame(animationId);
+        stopCannon();
+        // cancelAnimationFrame(animationId); // The electron
         stopAnimate();
 }
 
@@ -156,6 +164,9 @@ function drawSlits()
 
 function drawElectrons(cannonCanvas, cannonCanvas)
 {
+    if (!electronsON) {
+        return;
+    }
     cannonCtx.clearRect(0, 0, cannonCanvas.width, cannonCanvas.height);
     drawCannon();
     for (let i = 0; i < electrons.length; i++)
@@ -169,6 +180,9 @@ function drawElectrons(cannonCanvas, cannonCanvas)
 }
 
 function animate() {
+    if (!electronsON) {
+        return;
+    }
     addElectron();
     moveElectrons();
     drawElectrons(canvas2, cannonCtx);
